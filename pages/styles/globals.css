@@ -1,0 +1,64 @@
+/* Importando Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   🌈 Estilos globais — Casa da Thereza Anjo dos Animais
+   ========================================================== */
+
+/* Fonte principal */
+:root {
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: #fff;
+  color: #1f2937; /* cinza escuro para textos */
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inputs e botões */
+input, textarea, button {
+  font-family: var(--font-main);
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Cabeçalho */
+header {
+  background-color: white;
+}
+
+/* Rodapé */
+footer {
+  background-color: white;
+}
+
+/* Imagens responsivas */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Pequenos ajustes responsivos */
+@media (max-width: 768px) {
+  header nav {
+    display: none; /* esconde menu no mobile */
+  }
+}
