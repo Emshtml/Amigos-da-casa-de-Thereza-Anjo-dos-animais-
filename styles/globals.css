@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tema visual — fundo e efeitos */
+/* 🎨 Tema e estilo geral */
 :root {
   --main-font: 'Inter', sans-serif;
-  --bg-image: url('/animais/capa-fundo.jpg'); /* imagem grande de fundo */
+  --bg-image: url('/animais/capa-fundo.jpg');
 }
 
 body {
   font-family: var(--main-font);
   background: var(--bg-image) center/cover no-repeat fixed;
+  color: #222;
   margin: 0;
   padding: 0;
-  color: #222;
 }
 
+/* Fundo com efeito escuro suave */
 .bg-animals {
   background: var(--bg-image) center/cover no-repeat fixed;
   position: relative;
@@ -43,12 +44,11 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Cabeçalho fixo */
+/* Efeito para cabeçalho fixo */
 header {
   transition: background 0.4s ease;
 }
 
-/* Galeria */
-.grid img {
-  border-radius: 1rem;
+header.scrolled {
+  background: rgba(0, 0, 0, 0.85);
 }
