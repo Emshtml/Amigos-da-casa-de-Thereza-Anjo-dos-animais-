@@ -17,7 +17,8 @@ export default function AmigosCasaThereza() {
       <header className="max-w-6xl mx-auto p-6 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-rose-300 flex items-center justify-center text-white font-bold">CT</div>
-          <div>
+          <div className="min-h-screen bg-gradient-to-b from-amber-50 to-rose-50 font-sans text-gray-800 relative">
+
             <h1 className="text-2xl font-extrabold">Amigos da Casa</h1>
             <p className="text-sm text-gray-600">Thereza — Anjo dos Animais 🐾</p>
           </div>
