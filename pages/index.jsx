@@ -7,7 +7,7 @@ const animals = [
   { id: 1, name: "thor.jpg", age: "2 anos", breed: "SRD", img: `${baseURL}thor.jpg`, story: "Resgatada em 2024, amorosa e brincalhona." },
   { id: 2, name: "frida.jpg", age: "4 anos", breed: "Vira-lata", img: `${baseURL}frida.jpg`, story: "Adora passeios e carinho." },
   { id: 3, name: "mia1.jpg", age: "1 ano", breed: "Gata", img: `${baseURL}mia1.jpg`, story: "Carinhosa e ótima com crianças." },
-  { id: 4, name: "mia2.jpg", age: "3 anos", breed: "Vira-lata", img: `${baseURL}mia2.jpg`, story: "Muito brincalhão e amigo dos outros cães." },
+  { id: 4, name: "mia2.jpg", age: "3 anos", breed: "Gata", img: `${baseURL}mia2.jpg`, story: "Muito brincalhão e amigo dos outros cães." },
   { id: 5, name: "fiona1.jpg", age: "2 anos", breed: "SRD", img: `${baseURL}fiona1.jpg`, story: "Doce e tranquila, adora carinho." }
 ];
 
