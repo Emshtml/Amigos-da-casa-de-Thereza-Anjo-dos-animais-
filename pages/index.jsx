@@ -92,7 +92,7 @@ export default function Home() {
 
       {/* Contato / Rodapé */}
       <footer id="contato" className="bg-black/60 text-gray-100 py-8 mt-20 text-center">
-        <p className="text-lg font-medium">📍 São Paulo - SP | 💌 contato@casa-thereza.org</p>
+        <p className="text-lg font-medium">📍 São Paulo - SP | 💌 casadatheza1@gmail.com</p>
         <div className="flex justify-center gap-4 mt-3">
           <a
             href="https://www.instagram.com/casadatherezaong?igsh=aTgwOHVoZ2FyaGE3"
