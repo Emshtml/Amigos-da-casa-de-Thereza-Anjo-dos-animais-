@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
       "mia1.jpg",
       "mia2.jpg",
       "fiona1.jpg",
-      "mia3.jpg"
     ];
 
     let index = 0;
