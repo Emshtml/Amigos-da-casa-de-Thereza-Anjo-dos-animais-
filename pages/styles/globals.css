@@ -1,64 +1,50 @@
-/* Importando Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ==========================================================
-   🌈 Estilos globais — Casa da Thereza Anjo dos Animais
+   🐾 Tema dinâmico — Amigos da Casa Thereza Anjo dos Animais
+   Fundo real com transição suave entre fotos dos animais
    ========================================================== */
 
-/* Fonte principal */
-:root {
-  --font-main: 'Inter', sans-serif;
-}
-
 body {
-  font-family: var(--font-main);
-  background-color: #fff;
-  color: #1f2937; /* cinza escuro para textos */
-  margin: 0;
-  padding: 0;
+  @apply font-sans text-gray-800;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  transition: background-image 1.5s ease-in-out;
 }
 
-/* Links */
-a {
-  text-decoration: none;
+/* 🌸 Overlay suave para legibilidade */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: -1;
 }
 
-a:hover {
-  text-decoration: underline;
+/* 🎨 Títulos e texto */
+h1, h2, h3, h4 {
+  @apply text-rose-700;
 }
 
-/* Inputs e botões */
-input, textarea, button {
-  font-family: var(--font-main);
-  outline: none;
+/* 🐾 Links e botões */
+a, button {
+  @apply transition duration-300;
 }
 
-button {
-  cursor: pointer;
+a:hover, button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
 }
 
-/* Cabeçalho */
-header {
-  background-color: white;
+/* 💌 Cards com leve transparência */
+article {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Rodapé */
-footer {
-  background-color: white;
-}
-
-/* Imagens responsivas */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Pequenos ajustes responsivos */
-@media (max-width: 768px) {
-  header nav {
-    display: none; /* esconde menu no mobile */
-  }
-}
