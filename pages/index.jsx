@@ -1,14 +1,24 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const animals = [
     { src: "/animais/cachorro1.jpg", name: "thor" },
     { src: "/animais/cachorra.jpg", name: "frida" },
-    { src: "/animais/gata1.jpg", name: "mia1" },
+    { src: "/animais/gata1.jpg", name: "Mia1" },
     { src: "/animais/gata2.jpg", name: "mia2" },
-    { src: "/animais/cachorra1.jpg", name: "fiona1" },
-    { src: "/animais/cachkrro.jpg", name: "Lili" },
+    { src: "/animais/cachorros.jpg", name: "camelos" },
+    { src: "/animais/cachorra.jpg", name: "fiona1" },
   ];
+
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % animals.length);
+    }, 3000); // muda a cada 3 segundos
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="min-h-screen bg-animals text-gray-900 relative">
@@ -36,18 +46,28 @@ export default function Home() {
           Um lar de amor, esperança e cuidado para cães e gatos resgatados.
         </p>
 
-        {/* Galeria de animais */}
-        <div id="adote" className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+        {/* Slider de animais */}
+        <div
+          id="adote"
+          className="relative w-full max-w-3xl h-72 md:h-96 overflow-hidden rounded-2xl shadow-lg mb-10"
+        >
           {animals.map((animal, index) => (
-            <div key={index} className="overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform relative">
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === current ? "opacity-100" : "opacity-0"
+              }`}
+            >
               <Image
                 src={animal.src}
                 alt={animal.name}
-                width={300}
-                height={300}
-                className="object-cover w-full h-full"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-2xl"
               />
-              <span className="absolute bottom-2 left-2 bg-black/60 text-white px-2 py-1 rounded-md text-sm">{animal.name}</span>
+              <span className="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded-md text-sm">
+                {animal.name}
+              </span>
             </div>
           ))}
         </div>
@@ -60,17 +80,39 @@ export default function Home() {
         </a>
       </section>
 
-      {/* Contato */}
+      {/* Botão flutuante WhatsApp */}
+      <a
+        href="https://wa.me/5511976794749"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50"
+      >
+        WhatsApp
+      </a>
+
+      {/* Contato / Rodapé */}
       <footer id="contato" className="bg-black/60 text-gray-100 py-8 mt-20 text-center">
-        <p className="text-lg font-medium">📍 São Paulo - SP | 💌 casadathereza1@gmail.com</p>
+        <p className="text-lg font-medium">📍 São Paulo - SP | 💌 contato@casa-thereza.org</p>
         <div className="flex justify-center gap-4 mt-3">
-          <a href="#" className="hover:text-pink-400">Instagram</a>https://www.instagram.com/casadatherezaong?igsh=aTgwOHVoZ2FyaGE3
-          <a href="#" className="hover:text-pink-400">Facebook</a>
-          <a href="#" className="hover:text-pink-400">WhatsApp</a>
+          <a
+            href="https://www.instagram.com/casadatherezaong?igsh=aTgwOHVoZ2FyaGE3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-400"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://wa.me/5511976794749"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-400"
+          >
+            WhatsApp
+          </a>
         </div>
         <p className="text-sm text-gray-400 mt-2">© 2025 Amigos da Casa de Thereza Anjo dos Animais</p>
       </footer>
     </main>
   );
 }
-
