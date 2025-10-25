@@ -2,44 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ==============================
-   🌿 Tema visual — Casa Thereza
-   ============================== */
+/* Tema visual — fundo e efeitos */
 :root {
-  --bg-color: #fffaf9;
-  --accent-color: #e66d7d;
-  --accent-light: #fbe3e7;
-  --text-color: #3a2e2e;
+  --main-font: 'Inter', sans-serif;
+  --bg-image: url('/animais/capa-fundo.jpg'); /* imagem grande de fundo */
 }
 
-html, body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Inter', sans-serif;
-  min-height: 100%;
+body {
+  font-family: var(--main-font);
+  background: var(--bg-image) center/cover no-repeat fixed;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-/* Fundo decorativo com pegadas suaves */
-body::before {
+.bg-animals {
+  background: var(--bg-image) center/cover no-repeat fixed;
+  position: relative;
+}
+
+.bg-animals::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
-  background-image: url('https://raw.githubusercontent.com/Emshtml/casa-thereza-anjo-dos-animais/main/public/animais/patas-bg.png');
-  background-repeat: repeat;
-  background-size: 150px;
-  opacity: 0.07;
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 0;
 }
 
-/* Botões */
-.btn-primary {
-  @apply bg-rose-600 text-white rounded-lg px-5 py-2 font-semibold shadow hover:bg-rose-700 transition;
-}
-.btn-outline {
-  @apply border border-rose-300 rounded-lg px-5 py-2 font-medium hover:bg-rose-50 transition;
+main > * {
+  position: relative;
+  z-index: 1;
 }
 
-/* Cards */
-.card {
-  @apply bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition;
+a, button {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+/* Cabeçalho fixo */
+header {
+  transition: background 0.4s ease;
+}
+
+/* Galeria */
+.grid img {
+  border-radius: 1rem;
 }
