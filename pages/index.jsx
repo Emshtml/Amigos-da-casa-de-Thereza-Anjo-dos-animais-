@@ -77,7 +77,7 @@ export default function AmigosCasaThereza() {
         <p className="text-gray-600">
           💌 Contato:{" "}
           <a
-            href="mailto:casadatherezaong@gmail.com"
+            href="casadathereza1@gmail.com"
             className="text-rose-600 font-semibold hover:underline"
           >
             casadatherezaong@gmail.com
