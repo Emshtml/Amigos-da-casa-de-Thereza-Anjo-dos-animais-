@@ -5,7 +5,7 @@
 /* Tema visual — fundo e efeitos */
 :root {
   --main-font: 'Inter', sans-serif;
-  --bg-image: url('/animais/capa-fundo.jpg'); /* imagem grande de fundo */
+  --bg-image: url('/animais/capa-fundo.jpg'); /* imagem media de fundo */
 }
 
 body {
