@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   const animals = [
-    { src: "/animais/cachorro1.jpg", name: "Luna" },
-    { src: "/animais/cachorro2.jpg", name: "Toby" },
-    { src: "/animais/gato1.jpg", name: "Mimi" },
-    { src: "/animais/gato2.jpg", name: "Nina" },
-    { src: "/animais/cachorro3.jpg", name: "Bolt" },
-    { src: "/animais/gato3.jpg", name: "Lili" },
+    { src: "/animais/thor.jpg", name: "thor" },
+    { src: "/animais/mia1.jpg", name: "mia" },
+    { src: "/animais/mia2.jpg", name: "Mia" },
+    { src: "/animais/frida.jpg", name: "frida" },
+    { src: "/animais/fiona1.jpg", name: "fiona" },
+    { src: "/animais/caramelos.jpg", name: "caramelo" },
   ];
 
   return (
