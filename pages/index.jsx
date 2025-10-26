@@ -9,7 +9,7 @@ const animals = [
     name: "frida",
     age: "2 anos",
     breed: "SRD",
-    img: `${baseURL}thor.jpg`,
+    img: `${baseURL}frida.jpg`,
     story: "Resgatada em 2024, amorosa e brincalhona. Adora correr e receber carinho.",
   },
   {
@@ -17,7 +17,7 @@ const animals = [
     name: "fiona1",
     age: "4 anos",
     breed: "Vira-lata",
-    img: `${baseURL}toby.jpg`,
+    img: `${baseURL}fiona1.jpg`,
     story: "Adora passeios e carinho, muito dócil e sociável com outros cães.",
   },
   {
@@ -25,7 +25,7 @@ const animals = [
     name: "mia2",
     age: "1 ano",
     breed: "Gata",
-    img: `${baseURL}mimi.jpg`,
+    img: `${baseURL}mia2.jpg`,
     story: "Carinhosa, independente e ótima com crianças. Adora janelas e mimos!",
   },
   {
@@ -41,7 +41,7 @@ const animals = [
     name: "vesguinha1",
     age: "2 anos",
     breed: "Gata siamesa",
-    img: `${baseURL}nina.jpg`,
+    img: `${baseURL}vesguinha1.jpg`,
     story: "Meiga e silenciosa. Foi resgatada ainda filhote e ama colo e tranquilidade.",
   },
 ];
@@ -54,7 +54,7 @@ export default function AmigosCasaThereza() {
         <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-rose-500 text-white flex items-center justify-center rounded-full font-bold shadow-md">
-              CT
+              logo.png
             </div>
             <div>
               <h1 className="text-xl font-extrabold">Amigos da Casa</h1>
