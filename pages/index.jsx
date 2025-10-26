@@ -47,20 +47,22 @@ export default function AmigosCasaThereza() {
               key={index}
               className="bg-white p-4 rounded-2xl shadow-md hover:shadow-lg transition flex flex-col items-center"
             >
-              <div className="relative w-56 h-56 flex items-center justify-center overflow-hidden rounded-xl mb-3">
+              <div className="relative w-56 h-56 overflow-hidden rounded-xl mb-3">
                 <Image
                   src={animal.imagem}
                   alt={animal.nome}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  sizes="100%"
+                  style={{ objectFit: "cover" }}
                   className="rounded-xl"
+                  priority={index === 0}
                 />
               </div>
               <h3 className="text-xl font-semibold text-rose-700">
                 {animal.nome}
               </h3>
               <a
-                href="https://wa.me/5511976794749"
+                href={`https://wa.me/5511976794749?text=Olá! Tenho interesse em adotar o ${animal.nome}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 bg-rose-500 text-white px-5 py-2 rounded-full hover:bg-rose-600 transition"
@@ -77,7 +79,7 @@ export default function AmigosCasaThereza() {
         <p className="text-gray-600">
           💌 Contato:{" "}
           <a
-            href="casadathereza1@gmail.com"
+            href="mailto:casadathereza1@gmail.com"
             className="text-rose-600 font-semibold hover:underline"
           >
             casadathereza1@gmail.com
@@ -94,10 +96,12 @@ export default function AmigosCasaThereza() {
         className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contato pelo WhatsApp"
       >
         💬
       </a>
     </div>
   );
 }
+
 
