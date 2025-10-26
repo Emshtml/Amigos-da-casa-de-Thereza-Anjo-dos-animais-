@@ -80,7 +80,7 @@ export default function AmigosCasaThereza() {
             href="casadathereza1@gmail.com"
             className="text-rose-600 font-semibold hover:underline"
           >
-            casadatherezaong@gmail.com
+            casadathereza1@gmail.com
           </a>
         </p>
         <p className="text-gray-500 text-sm mt-2">
