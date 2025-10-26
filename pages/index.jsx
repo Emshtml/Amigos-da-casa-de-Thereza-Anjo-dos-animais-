@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Home() {
   const animals = [
     { src: "/animais/thor.jpg", name: "thor" },
-    { src: "/animais/mia1.jpg", name: "mia" },
-    { src: "/animais/mia2.jpg", name: "Mia" },
+    { src: "/animais/mia1.jpg", name: "mia1" },
+    { src: "/animais/mia2.jpg", name: "Mia2" },
     { src: "/animais/frida.jpg", name: "frida" },
-    { src: "/animais/fiona1.jpg", name: "fiona" },
-    { src: "/animais/caramelos.jpg", name: "caramelo" },
+    { src: "/animais/fiona1.jpg", name: "fiona1" },
+    { src: "/animais/caramelos.jpg", name: "caramelos" },
   ];
 
   return (
