@@ -53,8 +53,14 @@ export default function AmigosCasaThereza() {
       <header className="bg-white/70 backdrop-blur-md sticky top-0 z-50 border-b border-rose-200 shadow-sm">
         <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-rose-500 text-white flex items-center justify-center rounded-full font-bold shadow-md">
-              logo.png
+            <div className="w-16 h-16">
+  <img
+    src="/logo.png"
+    alt="Casa da Thereza - Anjo dos Animais"
+    className="w-full h-full object-contain rounded-full shadow-md bg-white p-1"
+  />
+</div>
+
             </div>
             <div>
               <h1 className="text-xl font-extrabold">Amigos da Casa</h1>
