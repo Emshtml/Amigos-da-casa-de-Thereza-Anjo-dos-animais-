@@ -4,8 +4,8 @@ export default function AmigosCasaThereza() {
   const animais = [
     { nome: "Thor", imagem: "/animais/thor.jpg" },
     { nome: "Frida", imagem: "/animais/frida.jpg" },
-    { nome: "Mia", imagem: "/animais/mia1.jpg" },
-    { nome: "Mia", imagem: "/animais/mia2.jpg" },
+    { nome: "Mia1", imagem: "/animais/mia1.jpg" },
+    { nome: "vesguinha1", imagem: "/animais/vesguinha1.jpg" },
     { nome: "Fiona", imagem: "/animais/fiona1.jpg" },
   ];
 
