@@ -62,7 +62,7 @@ export default function AmigosCasaThereza() {
                 {animal.nome}
               </h3>
               <a
-                href={`https://wa.me/5511976794749?text=Olá! Tenho interesse em adotar o ${animal.nome}.`}
+                href={`https://wa.me/5511954626174?text=Olá! Tenho interesse em adotar o ${animal.nome}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 bg-rose-500 text-white px-5 py-2 rounded-full hover:bg-rose-600 transition"
