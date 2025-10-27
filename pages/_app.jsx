@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
       "thor.jpg",
       "frida.jpg",
       "mia1.jpg",
-      "mia2.jpg",
+      "verguinha1.jpg",
       "fiona1.jpg",
     ];
 
