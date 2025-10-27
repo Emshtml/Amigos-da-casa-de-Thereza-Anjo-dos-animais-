@@ -92,7 +92,7 @@ export default function AmigosCasaThereza() {
 
       {/* ===== BOTÃO FLUTUANTE WHATSAPP ===== */}
       <a
-        href="https://wa.me/5511976794749"
+        href="https://wa.me/5511954626174"
         className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition"
         target="_blank"
         rel="noopener noreferrer"
