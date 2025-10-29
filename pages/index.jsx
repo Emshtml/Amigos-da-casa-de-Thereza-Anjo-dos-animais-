@@ -7,7 +7,7 @@ export default function AmigosCasaThereza() {
     { nome: "Mia1", imagem: "/images/mia1.jpg" },
     { nome: "vesguinha1", imagem: "/images/vesguinha1.jpg" },
     { nome: "Fiona", imagem: "/images/fiona1.jpg" },
-{ nome: "Fiona", imagem: "/images/vesguinha.jpg" },  
+{ nome: "Vesguinha", imagem: "/images/vesguinha.jpg" },  
   ];
 
   return (
