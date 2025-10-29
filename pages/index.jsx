@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function AmigosCasaThereza() {
   const animais = [
-    { nome: "Thor", imagem: "/animais/thor.jpg" },
-    { nome: "Frida", imagem: "/animais/frida.jpg" },
-    { nome: "Mia1", imagem: "/animais/mia1.jpg" },
-    { nome: "vesguinha1", imagem: "/animais/vesguinha1.jpg" },
-    { nome: "Fiona", imagem: "/animais/fiona1.jpg" },
+    { nome: "Thor", imagem: "/images/thor.jpg" },
+    { nome: "Frida", imagem: "/images/frida.jpg" },
+    { nome: "Mia1", imagem: "/images/mia1.jpg" },
+    { nome: "vesguinha1", imagem: "/images/vesguinha1.jpg" },
+    { nome: "Fiona", imagem: "/images/fiona1.jpg" },
   ];
 
   return (
