@@ -74,7 +74,7 @@ export default function Home() {
 
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5511954626174"
                   className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold px-8 py-4 rounded-2xl shadow-2xl transition"
                 >
                   Quero Ajudar
